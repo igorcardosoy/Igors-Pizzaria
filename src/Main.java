@@ -1,6 +1,7 @@
 import model.CrustType;
 import model.Pizza;
 import model.SizeType;
+import model.Pizza.Builder;
 
 public class Main {
     public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class Main {
                 .build();
 
 
-        builder = new Pizza.Builder();
+        builder = new Builder();
 
         builder.crust(CrustType.GLUTEN_FREE);
         builder.cheese("Queijo Vegano");

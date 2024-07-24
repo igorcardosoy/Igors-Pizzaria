@@ -11,7 +11,7 @@ public final class Pizza {
     private final SizeType size;
     private final CrustType crust;
 
-    public Pizza(SizeType size, CrustType crust, String cheese, List<String> toppings) {
+    private Pizza(SizeType size, CrustType crust, String cheese, List<String> toppings) {
         this.cheese = cheese;
         this.toppings = new LinkedList<>(toppings);
         this.size = SizeType.valueOf(size.name());
